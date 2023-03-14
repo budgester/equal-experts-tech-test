@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+  
+  vars:
+    jenkins_hostname: localhost
+
+  roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.jenkins
